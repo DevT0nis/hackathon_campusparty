@@ -1,10 +1,15 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import Carousel from '../components/Carousel.jsx';
+import Ongs from '../components/Ongs.jsx';
 
 const HomeContainer = styled.div`
   text-align: center;
   font-family: 'Arial, sans-serif';
+  display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 100vw;
 `;
 
 const Section = styled.section`
@@ -23,6 +28,11 @@ justify-content: center;
 
 `
 
+
+const SectionOngs = styled.section`
+
+
+`
 
 const Title = styled.h1`
   font-size: 2.5rem;
@@ -112,12 +122,11 @@ function Home() {
         <Paragraph>Facilitamos a comunicação e o processo de doação para maximizar o impacto social.</Paragraph>
         <Paragraph>As empresas podem encontrar ONGs de acordo com seus valores e áreas de interesse.</Paragraph>
       </Section>
-      <Section id="how-it-works">
-        <Subtitle>Como Funciona</Subtitle>
-        <Paragraph>Empresas se cadastram e preenchem um perfil detalhado sobre suas preferências de doação.</Paragraph>
-        <Paragraph>ONGs se cadastram e listam suas necessidades e projetos em andamento.</Paragraph>
-        <Paragraph>Nossa plataforma faz o match entre empresas e ONGs, criando oportunidades de doação efetivas.</Paragraph>
-      </Section>
+      <SectionOngs id="how-it-works">
+      
+        
+        <Ongs/>
+      </SectionOngs>
       <Section id="benefits" bgColor="#f9f9f9">
         <Subtitle>Benefícios</Subtitle>
         <Paragraph>Para Empresas: Maior visibilidade e impacto social, além de benefícios fiscais.</Paragraph>

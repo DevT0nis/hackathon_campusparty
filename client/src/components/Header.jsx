@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const HeaderContainer = styled.header`
+  position: fixed; /* Fixa o header */
+  top: 0; /* Fixa no topo da página */
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,6 +14,7 @@ const HeaderContainer = styled.header`
   background-color: #2c3e50; /* Cor de fundo mais suave */
   color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Garante que fique sobreposto a outros elementos */
 `;
 
 const Logo = styled.h1`
