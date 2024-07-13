@@ -8,7 +8,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const CarouselContainer = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
   width: 100%;
-  height: 50vh;
+  height: 100vh;
+  align-items: center;
 `;
 
 const Slide = styled.div`
@@ -19,8 +20,9 @@ const Slide = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 100%;
+  height:100%;
   object-fit: cover;
+  align-items: center;
 `;
 
 const TextOverlay = styled(motion.div)`
@@ -146,7 +148,7 @@ const CarouselComponent = () => {
         }
       >
         <Slide>
-          <Image src="../public/ong1.jpeg" alt="Slide 1" />
+          <Image src="https://img.freepik.com/free-photo/people-happy-support-stacking-community_1150-1689.jpg?t=st=1720843581~exp=1720847181~hmac=df45047fc361f0862a0b8b2035e485a19329a959cd5fbaecaa08afb7787adef5&w=1380" alt="Slide 1" />
           <TextOverlay
             initial="hidden"
             animate={controls}
@@ -158,7 +160,7 @@ const CarouselComponent = () => {
           </TextOverlay>
         </Slide>
         <Slide>
-          <Image src="../public/ong2.webp" alt="Slide 2" />
+          <Image src="https://img.freepik.com/free-photo/different-people-doing-volunteer-work-with-food_23-2149012168.jpg?t=st=1720843497~exp=1720847097~hmac=7a2ceb48bbd01ef48f29e3f116654edc7d1395a50869b2ddb0f4ccc3a49f8d00&w=1380" alt="Slide 2" />
           <TextOverlay
             initial="hidden"
             animate={controls}
@@ -170,7 +172,7 @@ const CarouselComponent = () => {
           </TextOverlay>
         </Slide>
         <Slide>
-          <Image src="../public/teste.webp" alt="Slide 3" />
+          <Image src="https://img.freepik.com/free-photo/kids-soccer-players-huddling-celebrating-victory-together_23-2150821494.jpg?t=st=1720843550~exp=1720847150~hmac=fe29bfd9cb09fc9f5dc6eca4e6c6f5ea90e646ad9d2e3eade69d898ecf17c637&w=826" alt="Slide 3" />
           <TextOverlay
             initial="hidden"
             animate={controls}
