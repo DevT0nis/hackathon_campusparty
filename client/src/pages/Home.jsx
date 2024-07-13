@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import Carousel from '../components/Carousel.jsx';
 
 const HomeContainer = styled.div`
   text-align: center;
@@ -8,9 +9,20 @@ const HomeContainer = styled.div`
 
 const Section = styled.section`
   padding: 4rem 2rem;
-  background-color: ${props => props.bgColor || 'white'};
-  color: ${props => props.textColor || 'black'};
+  ${({ bgColor, textColor }) => css`
+    background-color: ${bgColor || 'white'};
+    color: ${textColor || 'black'};
+  `}
 `;
+
+const SectionCarousel = styled.section`
+height: 50vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+`
+
 
 const Title = styled.h1`
   font-size: 2.5rem;
@@ -91,29 +103,28 @@ const Button = styled.button`
 function Home() {
   return (
     <HomeContainer>
-      <Section>
-        <Title>Bem-vindo à Minha Aplicação</Title>
-        <Paragraph>Conectando empresas a ONGs para facilitar doações e apoiar boas causas.</Paragraph>
-      </Section>
-      <Section bgColor="#f9f9f9">
+      <SectionCarousel id="about">
+        <Carousel />
+      </SectionCarousel>
+      <Section id="project" bgColor="#f9f9f9">
         <Subtitle>Sobre o Projeto</Subtitle>
         <Paragraph>Nossa plataforma visa conectar empresas com ONGs que precisam de doações.</Paragraph>
         <Paragraph>Facilitamos a comunicação e o processo de doação para maximizar o impacto social.</Paragraph>
         <Paragraph>As empresas podem encontrar ONGs de acordo com seus valores e áreas de interesse.</Paragraph>
       </Section>
-      <Section>
+      <Section id="how-it-works">
         <Subtitle>Como Funciona</Subtitle>
         <Paragraph>Empresas se cadastram e preenchem um perfil detalhado sobre suas preferências de doação.</Paragraph>
         <Paragraph>ONGs se cadastram e listam suas necessidades e projetos em andamento.</Paragraph>
         <Paragraph>Nossa plataforma faz o match entre empresas e ONGs, criando oportunidades de doação efetivas.</Paragraph>
       </Section>
-      <Section bgColor="#f9f9f9">
+      <Section id="benefits" bgColor="#f9f9f9">
         <Subtitle>Benefícios</Subtitle>
         <Paragraph>Para Empresas: Maior visibilidade e impacto social, além de benefícios fiscais.</Paragraph>
         <Paragraph>Para ONGs: Acesso a recursos financeiros e materiais necessários para continuar seu trabalho.</Paragraph>
         <Paragraph>Para a Sociedade: Um mundo melhor com mais colaboração e apoio às causas importantes.</Paragraph>
       </Section>
-      <Section>
+      <Section id="plans">
         <Subtitle>Planos</Subtitle>
         <PlanContainer>
           <PlanCard>
@@ -139,7 +150,7 @@ function Home() {
           </PlanCard>
         </PlanContainer>
       </Section>
-      <Section bgColor="#f9f9f9">
+      <Section id="contact" bgColor="#f9f9f9">
         <Subtitle>Contato</Subtitle>
         <ContactForm>
           <Input type="text" placeholder="Seu Nome" />
