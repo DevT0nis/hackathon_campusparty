@@ -115,7 +115,7 @@ const DonateButton = styled(Link)`
 
 function Ongs() {
   const ongs = [
-    { id: 1, name: 'Instituto PROA', logo: '../public/proa.png', link: '/ong1', text: 'Instituto PROA é uma ONG voltada para...', text1: 'Ajudar jovens periféricos a entrarem no mercado de trabalho' },
+    { id: 1, name: 'Instituto PROA', logo: '../proa.png', link: '/ong1', text: 'Instituto PROA é uma ONG voltada para...', text1: 'Ajudar jovens periféricos a entrarem no mercado de trabalho' },
     { id: 2, name: 'ONG 2', logo: './public/greenpeace.jpg', link: '', text: 'Descrição da ONG 2', text1: 'Mais detalhes sobre a ONG 2' },
     { id: 3, name: 'ONG 3', logo: './public/casa-ronald_5d2dc963.webp', link: '/ong3', text: 'Descrição da ONG 3', text1: 'Mais detalhes sobre a ONG 3' },
     { id: 4, name: 'ONG 4', logo: './public/cruzvermelha.jpg', link: '/ong4', text: 'Descrição da ONG 4', text1: 'Mais detalhes sobre a ONG 4' },
