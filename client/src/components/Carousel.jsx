@@ -146,7 +146,7 @@ const CarouselComponent = () => {
         }
       >
         <Slide>
-          <Image src="./public/ong1.jpeg" alt="Slide 1" />
+          <Image src="../public/ong1.jpeg" alt="Slide 1" />
           <TextOverlay
             initial="hidden"
             animate={controls}
@@ -158,7 +158,7 @@ const CarouselComponent = () => {
           </TextOverlay>
         </Slide>
         <Slide>
-          <Image src="./public/ong2.webp" alt="Slide 2" />
+          <Image src="../public/ong2.webp" alt="Slide 2" />
           <TextOverlay
             initial="hidden"
             animate={controls}
@@ -170,7 +170,7 @@ const CarouselComponent = () => {
           </TextOverlay>
         </Slide>
         <Slide>
-          <Image src="./public/teste.webp" alt="Slide 3" />
+          <Image src="../public/teste.webp" alt="Slide 3" />
           <TextOverlay
             initial="hidden"
             animate={controls}
