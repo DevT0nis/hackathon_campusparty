@@ -81,7 +81,7 @@ function Header() {
         <NavLink to="/como-doar">Como Doar</NavLink>
       </NavLinks>
       <ButtonContainer>
-        <Button to="/cadastro-empresa">Cadastre-se como Empresa</Button>
+        <Button to="/Login">Cadastre-se como Empresa</Button>
         <Button to="/cadastro-ong">Cadastre-se como ONG</Button>
       </ButtonContainer>
     </HeaderContainer>

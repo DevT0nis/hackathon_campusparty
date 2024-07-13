@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import GlobalStyle from './components/GlobalStyle';
+import LoginForm from './components/Login';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Login" element={<LoginForm />} />
       </Routes>
       <Footer />
     </Router>
